@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ── Design tokens ── */
+@theme {
+  --color-accent: #ccff00;
+  --color-dark: #000000;
+  --color-dark-50: #0a0a0a;
+  --color-dark-100: #111111;
+  --color-dark-200: #1a1a1a;
+  --color-dark-300: #222222;
+  --color-steel: #888888;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-archivo), system-ui, sans-serif;
+
+  --animate-marquee: marquee 35s linear infinite;
+  --animate-spin-slow: spin 8s linear infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── Keyframes ── */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Base ── */
+:root {
+  color-scheme: dark;
+}
+
+/* ── Persian / RTL font overrides ── */
+[dir="rtl"] body {
+  font-family: var(--font-vazirmatn), sans-serif;
+}
+
+[dir="rtl"] .font-heading {
+  font-family: var(--font-vazirmatn), sans-serif;
+}
+
+/* ── Selection ── */
+::selection {
+  background: #ccff00;
+  color: #000000;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccff00;
+  border-radius: 2px;
+}
+
+/* ── Focus ring ── */
+:focus-visible {
+  outline: 2px solid #ccff00;
+  outline-offset: 2px;
 }
