@@ -1,5 +1,3 @@
-export type Lang = "en" | "fa";
-
 export const translations = {
   en: {
     nav: {
@@ -16,7 +14,8 @@ export const translations = {
       headingAccent1: "BODY,",
       headingLine2: "ELEVATE YOUR",
       headingAccent2: "SPIRIT",
-      subtextBefore: "Join Fusion Performance and unlock a transformation backed by science, driven by passion, and proven by",
+      subtextBefore:
+        "Join Fusion Performance and unlock a transformation backed by science, driven by passion, and proven by",
       subtextHighlight: "12,000+",
       subtextAfter: "success stories.",
       cta1: "Get Started",
@@ -33,25 +32,30 @@ export const translations = {
       headingBefore: "Everything You Need to",
       headingAccent: "Dominate",
       headingAfter: "",
-      subtext: "Four pillars that separate Fusion Performance from every other program on the market.",
+      subtext:
+        "Four pillars that separate Fusion Performance from every other program on the market.",
       learnMore: "Learn more",
     },
     features: {
       training: {
         title: "Personalized Training",
-        description: "Custom workout programs engineered around your body type, fitness level, and schedule — no two plans are ever the same.",
+        description:
+          "Custom workout programs engineered around your body type, fitness level, and schedule — no two plans are ever the same.",
       },
       nutrition: {
         title: "Nutrition Plans",
-        description: "Science-backed macro and meal strategies tailored to fuel performance and accelerate your transformation.",
+        description:
+          "Science-backed macro and meal strategies tailored to fuel performance and accelerate your transformation.",
       },
       support: {
         title: "24/7 Support",
-        description: "Dedicated coach access around the clock — questions answered, form checked, motivation delivered.",
+        description:
+          "Dedicated coach access around the clock — questions answered, form checked, motivation delivered.",
       },
       tracking: {
         title: "Progress Tracking",
-        description: "Advanced biometric and performance metrics visualized week over week so you always know exactly how far you've come.",
+        description:
+          "Advanced biometric and performance metrics visualized week over week so you always know exactly how far you've come.",
       },
     },
     services: {
@@ -62,7 +66,8 @@ export const translations = {
       items: [
         {
           title: "Strength Training",
-          description: "Build raw power and sculpt dense muscle through progressive overload protocols designed by elite-level coaches. Every rep, every set, counts.",
+          description:
+            "Build raw power and sculpt dense muscle through progressive overload protocols designed by elite-level coaches. Every rep, every set, counts.",
           badge: "Most Popular",
           stats: [
             { label: "Avg Strength Gain", value: "+45%" },
@@ -71,7 +76,8 @@ export const translations = {
         },
         {
           title: "Fat Loss Protocol",
-          description: "Precision-engineered programs that maximize fat oxidation while preserving every ounce of hard-earned muscle mass. Real results, no gimmicks.",
+          description:
+            "Precision-engineered programs that maximize fat oxidation while preserving every ounce of hard-earned muscle mass. Real results, no gimmicks.",
           badge: "Results Guaranteed",
           stats: [
             { label: "Avg Weight Lost", value: "18 lbs" },
@@ -80,7 +86,8 @@ export const translations = {
         },
         {
           title: "HIIT & Conditioning",
-          description: "High-intensity interval protocols that shred body fat and skyrocket cardiovascular endurance simultaneously. Brutal. Effective. Transformative.",
+          description:
+            "High-intensity interval protocols that shred body fat and skyrocket cardiovascular endurance simultaneously. Brutal. Effective. Transformative.",
           badge: "Elite Level",
           stats: [
             { label: "Calorie Burn", value: "3× Increase" },
@@ -97,7 +104,8 @@ export const translations = {
       bio1: "I'm Marcus Wells — and I've spent the last 9 years in the trenches of competitive bodybuilding, Olympic-level performance coaching, and nutritional science. I don't sell you a cookie-cutter plan. I build a system around your body, your life, and your ceiling — then I help you break through it.",
       bio2Before: "Fusion Performance was born from one obsession:",
       bio2Highlight: "relentless, measurable, sustainable results",
-      bio2After: ". Every client who walks through this door leaves a different person.",
+      bio2After:
+        ". Every client who walks through this door leaves a different person.",
       cta: "Work With Marcus →",
       credentials: [
         "NSCA Certified Strength & Conditioning Specialist",
@@ -112,7 +120,8 @@ export const translations = {
       headingBefore: "The Proof Is In The",
       headingAccent: "Progress",
       headingAfter: "",
-      subtext: "Real clients. Real timelines. Real transformations — no filters, no tricks.",
+      subtext:
+        "Real clients. Real timelines. Real transformations — no filters, no tricks.",
       joinText: "Join 12,000+ who already made the change",
       cta: "Start My Transformation →",
       before: "Before",
@@ -122,10 +131,15 @@ export const translations = {
       badge: "Custom Plans",
       headingBefore: "Request Your",
       headingAccent: "Custom Plan",
-      subtextBefore: "No generic templates. Fill out the form below and Coach Marcus will build a personalised program around your goals within",
+      subtextBefore:
+        "No generic templates. Fill out the form below and Coach Marcus will build a personalised program around your goals within",
       subtextHighlight: "24 hours",
       subtextAfter: ".",
-      trust: ["No spam. Ever.", "Cancel anytime.", "24-hr response guaranteed."],
+      trust: [
+        "No spam. Ever.",
+        "Cancel anytime.",
+        "24-hr response guaranteed.",
+      ],
     },
     form: {
       name: "Full Name",
@@ -139,7 +153,8 @@ export const translations = {
       submit: "Transform Now →",
       processing: "Processing...",
       successTitle: "You're In.",
-      successText: "Coach Marcus will reach out within 24 hours with your custom plan breakdown.",
+      successText:
+        "Coach Marcus will reach out within 24 hours with your custom plan breakdown.",
       submitAnother: "Submit another",
       errorGeneric: "Something went wrong. Please try again.",
       errorName: "Name must be at least 2 characters",
@@ -157,14 +172,15 @@ export const translations = {
     },
     transformations: [
       { duration: "12 Weeks", result: "Lost 32 lbs" },
-      { duration: "8 Weeks",  result: "Lost 18 lbs" },
+      { duration: "8 Weeks", result: "Lost 18 lbs" },
       { duration: "16 Weeks", result: "Lost 45 lbs" },
       { duration: "10 Weeks", result: "Lost 22 lbs" },
       { duration: "12 Weeks", result: "+15 lbs Muscle" },
-      { duration: "8 Weeks",  result: "Lost 20 lbs" },
+      { duration: "8 Weeks", result: "Lost 20 lbs" },
     ],
     footer: {
-      tagline: "Elite coaching for serious athletes and everyday warriors ready to transform their bodies and minds.",
+      tagline:
+        "Elite coaching for serious athletes and everyday warriors ready to transform their bodies and minds.",
       navigation: "Navigation",
       contact: "Get In Touch",
       email: "coach@fusionperformance.com",
@@ -193,7 +209,8 @@ export const translations = {
       headingAccent1: "شکل بده،",
       headingLine2: "روحت را",
       headingAccent2: "ارتقاء بده",
-      subtextBefore: "به فیوژن پرفورمنس بپیوند و تحولی باورنکردنی را تجربه کن — مبتنی بر علم، با اشتیاق هدایت‌شده، و با",
+      subtextBefore:
+        "به فیوژن پرفورمنس بپیوند و تحولی باورنکردنی را تجربه کن — مبتنی بر علم، با اشتیاق هدایت‌شده، و با",
       subtextHighlight: "بیش از ۱۲,۰۰۰",
       subtextAfter: "داستان موفقیت اثبات‌شده.",
       cta1: "شروع کن",
@@ -210,25 +227,30 @@ export const translations = {
       headingBefore: "همه آنچه برای",
       headingAccent: "پیروزی",
       headingAfter: "نیاز داری",
-      subtext: "چهار رکن اساسی که فیوژن پرفورمنس را از هر برنامه دیگری متمایز می‌کند.",
+      subtext:
+        "چهار رکن اساسی که فیوژن پرفورمنس را از هر برنامه دیگری متمایز می‌کند.",
       learnMore: "بیشتر بدانید",
     },
     features: {
       training: {
         title: "تمرین شخصی‌سازی‌شده",
-        description: "برنامه‌های تمرینی سفارشی که بر اساس نوع بدن، سطح آمادگی و زمان‌بندی تو طراحی می‌شوند — هیچ دو برنامه‌ای شبیه هم نیستند.",
+        description:
+          "برنامه‌های تمرینی سفارشی که بر اساس نوع بدن، سطح آمادگی و زمان‌بندی تو طراحی می‌شوند — هیچ دو برنامه‌ای شبیه هم نیستند.",
       },
       nutrition: {
         title: "برنامه تغذیه",
-        description: "استراتژی‌های تغذیه‌ای مبتنی بر علم که برای تقویت عملکرد و تسریع تحول تو طراحی شده‌اند.",
+        description:
+          "استراتژی‌های تغذیه‌ای مبتنی بر علم که برای تقویت عملکرد و تسریع تحول تو طراحی شده‌اند.",
       },
       support: {
         title: "پشتیبانی ۲۴/۷",
-        description: "دسترسی همیشگی به مربی — سوالات پاسخ داده می‌شوند، فرم بررسی می‌شود، انگیزه تزریق می‌شود.",
+        description:
+          "دسترسی همیشگی به مربی — سوالات پاسخ داده می‌شوند، فرم بررسی می‌شود، انگیزه تزریق می‌شود.",
       },
       tracking: {
         title: "پیگیری پیشرفت",
-        description: "معیارهای بیومتریک و عملکردی پیشرفته که هفته به هفته تجسم می‌شوند تا همیشه بدانی تا کجا پیش رفته‌ای.",
+        description:
+          "معیارهای بیومتریک و عملکردی پیشرفته که هفته به هفته تجسم می‌شوند تا همیشه بدانی تا کجا پیش رفته‌ای.",
       },
     },
     services: {
@@ -239,7 +261,8 @@ export const translations = {
       items: [
         {
           title: "تمرین قدرتی",
-          description: "با پروتکل‌های اضافه‌بار پیشرونده طراحی‌شده توسط مربیان نخبه، قدرت خام بسازید و عضله متراکم را شکل دهید. هر تکرار، هر ست، اهمیت دارد.",
+          description:
+            "با پروتکل‌های اضافه‌بار پیشرونده طراحی‌شده توسط مربیان نخبه، قدرت خام بسازید و عضله متراکم را شکل دهید. هر تکرار، هر ست، اهمیت دارد.",
           badge: "محبوب‌ترین",
           stats: [
             { label: "میانگین افزایش قدرت", value: "+۴۵٪" },
@@ -248,7 +271,8 @@ export const translations = {
         },
         {
           title: "پروتکل کاهش چربی",
-          description: "برنامه‌های دقیقاً مهندسی‌شده که اکسیداسیون چربی را به حداکثر می‌رسانند و هر گرم از عضلات به‌دست‌آمده را حفظ می‌کنند.",
+          description:
+            "برنامه‌های دقیقاً مهندسی‌شده که اکسیداسیون چربی را به حداکثر می‌رسانند و هر گرم از عضلات به‌دست‌آمده را حفظ می‌کنند.",
           badge: "نتایج تضمینی",
           stats: [
             { label: "میانگین کاهش وزن", value: "۸ کیلو" },
@@ -257,7 +281,8 @@ export const translations = {
         },
         {
           title: "هیت و آمادگی",
-          description: "پروتکل‌های اینتروال با شدت بالا که چربی‌سوزی و استقامت قلبی‌عروقی را به‌طور همزمان افزایش می‌دهند. شدید. مؤثر. تحول‌آفرین.",
+          description:
+            "پروتکل‌های اینتروال با شدت بالا که چربی‌سوزی و استقامت قلبی‌عروقی را به‌طور همزمان افزایش می‌دهند. شدید. مؤثر. تحول‌آفرین.",
           badge: "سطح نخبه",
           stats: [
             { label: "کالری‌سوزی", value: "۳ برابر" },
@@ -274,7 +299,8 @@ export const translations = {
       bio1: "من مارکوس ولز هستم — و ۹ سال گذشته را در دل رقابت‌های پرورش‌اندام، مربیگری عملکرد در سطح المپیک و علم تغذیه گذرانده‌ام. من یک برنامه قالبی به تو نمی‌دهم. یک سیستم کامل بر اساس بدن، زندگی و توانایی‌هایت می‌سازم — و بعد کمک می‌کنم از سقف خودت فراتر بروی.",
       bio2Before: "فیوژن پرفورمنس از یک وسواس متولد شد:",
       bio2Highlight: "نتایج بی‌وقفه، قابل اندازه‌گیری و پایدار",
-      bio2After: ". هر مشتری که از این در وارد می‌شود، با تحولی واقعی از آن خارج می‌شود.",
+      bio2After:
+        ". هر مشتری که از این در وارد می‌شود، با تحولی واقعی از آن خارج می‌شود.",
       cta: "با مارکوس کار کن ←",
       credentials: [
         "متخصص گواهی‌دار قدرت و آمادگی NSCA",
@@ -289,7 +315,8 @@ export const translations = {
       headingBefore: "اثبات در",
       headingAccent: "پیشرفت",
       headingAfter: "است",
-      subtext: "مشتریان واقعی. زمان‌بندی‌های واقعی. تحولات واقعی — بدون فیلتر، بدون ترفند.",
+      subtext:
+        "مشتریان واقعی. زمان‌بندی‌های واقعی. تحولات واقعی — بدون فیلتر، بدون ترفند.",
       joinText: "به ۱۲,۰۰۰+ نفری بپیوند که این تغییر را کرده‌اند",
       cta: "شروع تحول من ←",
       before: "قبل",
@@ -299,10 +326,15 @@ export const translations = {
       badge: "برنامه‌های اختصاصی",
       headingBefore: "برنامه اختصاصی‌ات را",
       headingAccent: "درخواست بده",
-      subtextBefore: "هیچ قالب عمومی‌ای در کار نیست. فرم را پر کن و مربی مارکوس ظرف",
+      subtextBefore:
+        "هیچ قالب عمومی‌ای در کار نیست. فرم را پر کن و مربی مارکوس ظرف",
       subtextHighlight: "۲۴ ساعت",
       subtextAfter: "یک برنامه شخصی‌سازی‌شده بر اساس اهدافت می‌سازد.",
-      trust: ["بدون اسپم. هرگز.", "هر زمان انصراف بده.", "پاسخ در ۲۴ ساعت تضمینی."],
+      trust: [
+        "بدون اسپم. هرگز.",
+        "هر زمان انصراف بده.",
+        "پاسخ در ۲۴ ساعت تضمینی.",
+      ],
     },
     form: {
       name: "نام کامل",
@@ -316,7 +348,8 @@ export const translations = {
       submit: "همین الان تحول داشته باش ←",
       processing: "در حال پردازش...",
       successTitle: "!ثبت شدی",
-      successText: "مربی مارکوس ظرف ۲۴ ساعت با خلاصه برنامه اختصاصی‌ات با تو تماس می‌گیرد.",
+      successText:
+        "مربی مارکوس ظرف ۲۴ ساعت با خلاصه برنامه اختصاصی‌ات با تو تماس می‌گیرد.",
       submitAnother: "ارسال مجدد",
       errorGeneric: "مشکلی پیش آمد. لطفاً دوباره تلاش کنید.",
       errorName: "نام باید حداقل ۲ کاراکتر باشد",
@@ -334,14 +367,15 @@ export const translations = {
     },
     transformations: [
       { duration: "۱۲ هفته", result: "کاهش ۱۴ کیلو" },
-      { duration: "۸ هفته",  result: "کاهش ۸ کیلو" },
+      { duration: "۸ هفته", result: "کاهش ۸ کیلو" },
       { duration: "۱۶ هفته", result: "کاهش ۲۰ کیلو" },
       { duration: "۱۰ هفته", result: "کاهش ۱۰ کیلو" },
       { duration: "۱۲ هفته", result: "+۷ کیلو عضله" },
-      { duration: "۸ هفته",  result: "کاهش ۹ کیلو" },
+      { duration: "۸ هفته", result: "کاهش ۹ کیلو" },
     ],
     footer: {
-      tagline: "مربیگری نخبه برای ورزشکاران جدی و جنگجویان روزمره‌ای که آماده تغییر بدن و ذهنشان هستند.",
+      tagline:
+        "مربیگری نخبه برای ورزشکاران جدی و جنگجویان روزمره‌ای که آماده تغییر بدن و ذهنشان هستند.",
       navigation: "ناوبری",
       contact: "تماس با ما",
       email: "coach@fusionperformance.com",

@@ -1,14 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { create } from "zustand";
-import { motion, AnimatePresence } from "motion/react";
 import { Button } from "@/components/ui/Button";
 import { NAV_ITEMS } from "@/constants";
-import { Menu, X, Zap, Globe } from "lucide-react";
-import { useLangStore } from "@/libs/i18n/langStore";
 import { useTranslation } from "@/hooks/useTranslation";
+import { useRouter } from "@/i18n/navigation";
 import type { Translations } from "@/libs/i18n/translations";
+import { Globe, Menu, X, Zap } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { useEffect, useState } from "react";
+import { create } from "zustand";
 
 type NavState = {
   isOpen: boolean;
@@ -26,7 +26,11 @@ export function Navbar() {
   const { isOpen, toggle, close } = useNavStore();
   const [scrolled, setScrolled] = useState(false);
   const { t, lang } = useTranslation();
-  const toggleLang = useLangStore((s) => s.toggleLang);
+  const router = useRouter();
+
+  const switchLocale = () => {
+    router.push("/", { locale: lang === "fa" ? "en" : "fa" });
+  };
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 40);
@@ -50,8 +54,7 @@ export function Navbar() {
               <Zap className="w-4 h-4 text-black" fill="black" />
             </div>
             <span className="text-white font-black uppercase tracking-wider text-sm font-heading">
-              Fusion{" "}
-              <span className="text-[#CCFF00]">Performance</span>
+              Fusion <span className="text-[#CCFF00]">Performance</span>
             </span>
           </a>
 
@@ -72,18 +75,30 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             {/* Language toggle */}
             <button
-              onClick={toggleLang}
+              onClick={switchLocale}
               className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-[#888888] hover:text-[#CCFF00] border border-white/10 hover:border-[#CCFF00]/40 px-2.5 py-1.5 transition-all duration-200"
               aria-label="Switch language"
             >
               <Globe className="w-3 h-3" />
-              <span style={lang === "en" ? { fontFamily: "var(--font-vazirmatn), sans-serif" } : undefined}>
+              <span
+                style={
+                  lang === "en"
+                    ? { fontFamily: "var(--font-vazirmatn), sans-serif" }
+                    : undefined
+                }
+              >
                 {t.nav.langSwitch}
               </span>
             </button>
-            <Button variant="primary" size="sm" onClick={() => {
-              document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-            }}>
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() => {
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               {t.nav.startToday}
             </Button>
           </div>
@@ -123,11 +138,17 @@ export function Navbar() {
               ))}
               <li>
                 <button
-                  onClick={toggleLang}
+                  onClick={switchLocale}
                   className="flex items-center gap-1.5 text-xs font-semibold text-[#888888] uppercase tracking-widest"
                 >
                   <Globe className="w-3.5 h-3.5" />
-                  <span style={lang === "en" ? { fontFamily: "var(--font-vazirmatn), sans-serif" } : undefined}>
+                  <span
+                    style={
+                      lang === "en"
+                        ? { fontFamily: "var(--font-vazirmatn), sans-serif" }
+                        : undefined
+                    }
+                  >
                     {t.nav.langSwitch}
                   </span>
                 </button>
@@ -139,7 +160,9 @@ export function Navbar() {
                   className="w-full"
                   onClick={() => {
                     close();
-                    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                    document
+                      .querySelector("#contact")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
                   {t.nav.startToday}

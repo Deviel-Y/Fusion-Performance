@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "motion/react";
 import { Button } from "@/components/ui/Button";
 import { SectionBadge } from "@/components/ui/SectionBadge";
-import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { motion } from "motion/react";
+import Image from "next/image";
 
 const HERO_IMG =
   "https://images.pexels.com/photos/8875043/pexels-photo-8875043.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80";
@@ -36,14 +36,14 @@ export function HeroSection() {
           <div
             className={`absolute inset-0 ${
               isRTL
-                ? "bg-gradient-to-l from-black via-black/75 to-transparent"
-                : "bg-gradient-to-r from-black via-black/75 to-transparent"
+                ? "bg-linear-to-l from-black via-black/75 to-transparent"
+                : "bg-linear-to-r from-black via-black/75 to-transparent"
             }`}
           />
           {/* Bottom fade */}
-          <div className="absolute bottom-0 inset-x-0 h-48 bg-gradient-to-t from-black to-transparent" />
+          <div className="absolute bottom-0 inset-x-0 h-48 bg-linear-to-t from-black to-transparent" />
           {/* Top fade */}
-          <div className="absolute top-0 inset-x-0 h-24 bg-gradient-to-b from-black to-transparent" />
+          <div className="absolute top-0 inset-x-0 h-24 bg-linear-to-b from-black to-transparent" />
         </div>
 
         {/* Solid black background behind the text side */}
@@ -93,7 +93,7 @@ export function HeroSection() {
             {t.hero.headingLine2}{" "}
             <span className="relative inline-block">
               <span className="relative z-10">{t.hero.headingAccent2}</span>
-              <span className="absolute inset-x-0 bottom-1 h-3 bg-[#CCFF00]/20 -z-0" />
+              <span className="absolute inset-x-0 bottom-1 h-3 bg-[#CCFF00]/20 z-0" />
             </span>
           </motion.h1>
 
@@ -101,10 +101,12 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.22 }}
-            className="mt-7 text-[#888888] text-lg leading-relaxed max-w-md"
+            className="mt-7 text-steel text-lg leading-relaxed max-w-md"
           >
             {t.hero.subtextBefore}{" "}
-            <span className="text-white font-semibold">{t.hero.subtextHighlight}</span>{" "}
+            <span className="text-white font-semibold">
+              {t.hero.subtextHighlight}
+            </span>{" "}
             {t.hero.subtextAfter}
           </motion.p>
 
@@ -174,7 +176,7 @@ export function HeroSection() {
         <span className="text-[10px] uppercase tracking-[0.3em] text-[#555555]">
           {t.hero.scroll}
         </span>
-        <div className="w-px h-10 bg-gradient-to-b from-[#CCFF00]/40 to-transparent" />
+        <div className="w-px h-10 bg-linear-to-b from-[#CCFF00]/40 to-transparent" />
       </motion.div>
     </section>
   );

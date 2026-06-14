@@ -37,3 +37,5 @@ export type GoalOption = {
   value: string;
   label: string;
 };
+
+export type Lang = "en" | "fa";

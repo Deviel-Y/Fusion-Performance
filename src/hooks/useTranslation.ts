@@ -1,11 +1,12 @@
 "use client";
 
-import { useLangStore } from "@/libs/i18n/langStore";
-import { translations } from "@/libs/i18n/translations";
+import type { Translations } from "@/libs/i18n/translations";
+import type { Lang } from "@/types/types";
+import { useLocale, useMessages } from "next-intl";
 
 export function useTranslation() {
-  const lang = useLangStore((s) => s.lang);
-  const t = translations[lang];
+  const lang = useLocale() as Lang;
+  const messages = useMessages() as Translations;
   const isRTL = lang === "fa";
-  return { t, lang, isRTL };
+  return { t: messages, lang, isRTL };
 }

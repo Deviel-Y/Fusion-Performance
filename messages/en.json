@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "programs": "Programs",
+    "coach": "Coach",
+    "results": "Results",
+    "contact": "Contact",
+    "startToday": "Start Today",
+    "langSwitch": "فارسی"
+  },
+  "hero": {
+    "badge": "Elite Performance Training",
+    "headingLine1": "SCULPT YOUR",
+    "headingAccent1": "BODY,",
+    "headingLine2": "ELEVATE YOUR",
+    "headingAccent2": "SPIRIT",
+    "subtextBefore": "Join Fusion Performance and unlock a transformation backed by science, driven by passion, and proven by",
+    "subtextHighlight": "12,000+",
+    "subtextAfter": "success stories.",
+    "cta1": "Get Started",
+    "cta2": "View Programs",
+    "scroll": "Scroll",
+    "stats": [
+      { "value": "12K+", "label": "Transformations" },
+      { "value": "98%", "label": "Client Retention" },
+      { "value": "7+", "label": "Years Coaching" }
+    ]
+  },
+  "bento": {
+    "badge": "Why Fusion",
+    "headingBefore": "Everything You Need to",
+    "headingAccent": "Dominate",
+    "headingAfter": "",
+    "subtext": "Four pillars that separate Fusion Performance from every other program on the market.",
+    "learnMore": "Learn more"
+  },
+  "features": {
+    "training": {
+      "title": "Personalized Training",
+      "description": "Custom workout programs engineered around your body type, fitness level, and schedule — no two plans are ever the same."
+    },
+    "nutrition": {
+      "title": "Nutrition Plans",
+      "description": "Science-backed macro and meal strategies tailored to fuel performance and accelerate your transformation."
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Dedicated coach access around the clock — questions answered, form checked, motivation delivered."
+    },
+    "tracking": {
+      "title": "Progress Tracking",
+      "description": "Advanced biometric and performance metrics visualized week over week so you always know exactly how far you've come."
+    }
+  },
+  "services": {
+    "badge": "Our Programs",
+    "headingBefore": "Choose Your",
+    "headingAccent": "Weapon",
+    "cta": "Get This Program",
+    "items": [
+      {
+        "title": "Strength Training",
+        "description": "Build raw power and sculpt dense muscle through progressive overload protocols designed by elite-level coaches. Every rep, every set, counts.",
+        "badge": "Most Popular",
+        "stats": [
+          { "label": "Avg Strength Gain", "value": "+45%" },
+          { "label": "Program Length", "value": "12 Weeks" }
+        ]
+      },
+      {
+        "title": "Fat Loss Protocol",
+        "description": "Precision-engineered programs that maximize fat oxidation while preserving every ounce of hard-earned muscle mass. Real results, no gimmicks.",
+        "badge": "Results Guaranteed",
+        "stats": [
+          { "label": "Avg Weight Lost", "value": "18 lbs" },
+          { "label": "Program Length", "value": "8 Weeks" }
+        ]
+      },
+      {
+        "title": "HIIT & Conditioning",
+        "description": "High-intensity interval protocols that shred body fat and skyrocket cardiovascular endurance simultaneously. Brutal. Effective. Transformative.",
+        "badge": "Elite Level",
+        "stats": [
+          { "label": "Calorie Burn", "value": "3× Increase" },
+          { "label": "Sessions / Week", "value": "4–5" }
+        ]
+      }
+    ]
+  },
+  "coach": {
+    "badge": "The Coach",
+    "headingBefore": "Built in the",
+    "headingAccent": "Trenches.",
+    "headingLine2": "Proven by Results.",
+    "bio1": "I'm Marcus Wells — and I've spent the last 9 years in the trenches of competitive bodybuilding, Olympic-level performance coaching, and nutritional science. I don't sell you a cookie-cutter plan. I build a system around your body, your life, and your ceiling — then I help you break through it.",
+    "bio2Before": "Fusion Performance was born from one obsession:",
+    "bio2Highlight": "relentless, measurable, sustainable results",
+    "bio2After": ". Every client who walks through this door leaves a different person.",
+    "cta": "Work With Marcus →",
+    "credentials": [
+      "NSCA Certified Strength & Conditioning Specialist",
+      "Former Competitive Bodybuilder — 3× Regional Champion",
+      "12,000+ Clients Transformed Since 2017"
+    ],
+    "name": "Coach Marcus",
+    "title": "Head Performance Coach"
+  },
+  "gallery": {
+    "badge": "Real Results",
+    "headingBefore": "The Proof Is In The",
+    "headingAccent": "Progress",
+    "headingAfter": "",
+    "subtext": "Real clients. Real timelines. Real transformations — no filters, no tricks.",
+    "joinText": "Join 12,000+ who already made the change",
+    "cta": "Start My Transformation →",
+    "before": "Before",
+    "after": "After"
+  },
+  "lead": {
+    "badge": "Custom Plans",
+    "headingBefore": "Request Your",
+    "headingAccent": "Custom Plan",
+    "subtextBefore": "No generic templates. Fill out the form below and Coach Marcus will build a personalised program around your goals within",
+    "subtextHighlight": "24 hours",
+    "subtextAfter": ".",
+    "trust": [
+      "No spam. Ever.",
+      "Cancel anytime.",
+      "24-hr response guaranteed."
+    ]
+  },
+  "form": {
+    "name": "Full Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "goal": "Primary Goal",
+    "goalPlaceholder": "Select your primary goal",
+    "phone": "Phone (Optional)",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "submit": "Transform Now →",
+    "processing": "Processing...",
+    "successTitle": "You're In.",
+    "successText": "Coach Marcus will reach out within 24 hours with your custom plan breakdown.",
+    "submitAnother": "Submit another",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorName": "Name must be at least 2 characters",
+    "errorEmail": "Please enter a valid email address",
+    "errorGoal": "Please select a primary goal"
+  },
+  "goals": [
+    { "value": "weight-loss", "label": "Weight Loss" },
+    { "value": "muscle-gain", "label": "Muscle Gain" },
+    { "value": "athletic-performance", "label": "Athletic Performance" },
+    { "value": "general-fitness", "label": "General Fitness & Health" }
+  ],
+  "social": {
+    "badge": "12k+ Transformations & Counting"
+  },
+  "transformations": [
+    { "duration": "12 Weeks", "result": "Lost 32 lbs" },
+    { "duration": "8 Weeks", "result": "Lost 18 lbs" },
+    { "duration": "16 Weeks", "result": "Lost 45 lbs" },
+    { "duration": "10 Weeks", "result": "Lost 22 lbs" },
+    { "duration": "12 Weeks", "result": "+15 lbs Muscle" },
+    { "duration": "8 Weeks", "result": "Lost 20 lbs" }
+  ],
+  "footer": {
+    "tagline": "Elite coaching for serious athletes and everyday warriors ready to transform their bodies and minds.",
+    "navigation": "Navigation",
+    "contact": "Get In Touch",
+    "email": "coach@fusionperformance.com",
+    "hours": "Mon – Sat, 6 AM – 9 PM",
+    "emailLabel": "Email:",
+    "hoursLabel": "Hours:",
+    "rights": "Fusion Performance. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  }
+}
