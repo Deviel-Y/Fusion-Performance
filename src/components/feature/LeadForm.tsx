@@ -1,17 +1,17 @@
 "use client";
 
-import { useMemo } from "react";
-import { useForm, Controller } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { useMutation } from "@tanstack/react-query";
-import { motion, AnimatePresence } from "motion/react";
+import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
-import { Button } from "@/components/ui/Button";
-import { CheckCircle, Loader2 } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 import type { LeadFormData } from "@/types/types";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useMutation } from "@tanstack/react-query";
+import { CheckCircle, Loader2 } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { useMemo } from "react";
+import { Controller, useForm } from "react-hook-form";
+import { z } from "zod";
 
 type FormValues = {
   name: string;
@@ -32,11 +32,11 @@ export function LeadForm() {
     () =>
       z.object({
         name: z.string().min(2, t.form.errorName),
-        email: z.string().email(t.form.errorEmail),
+        email: z.email(t.form.errorEmail),
         goal: z.string().min(1, t.form.errorGoal),
         phone: z.string().optional(),
       }),
-    [t]
+    [t],
   );
 
   const {

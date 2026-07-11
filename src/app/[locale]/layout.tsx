@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/layout/Navbar";
-import { Providers } from "@/libs/Providers";
 import { routing } from "@/i18n/routing";
+import { Providers } from "@/libs/Providers";
 import type { Lang } from "@/types/types";
 import type { Metadata } from "next";
-import { Archivo, Inter, Vazirmatn } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { Archivo, Inter, Vazirmatn } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
